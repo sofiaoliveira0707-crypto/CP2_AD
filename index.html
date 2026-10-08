@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Busca trizes e atores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Busca trizes e atores</h1>
+
+  <div class="controles">
+    <input type="text" class="busca" placeholder="Buscar por nome..." oninput="aplicarFiltros()">
+    <select class="select-ano" onchange="aplicarFiltros()">
+      <option value="todos">Todas as décadas</option>
+      <option value="1960">Anos 1960</option>
+      <option value="1970">Anos 1970</option>
+      <option value="1980">Anos 1980</option>
+      <option value="1990">Anos 1990</option>
+      <option value="2000">Anos 2000</option>
+    </select>
+      <select class="select-pais" onchange="aplicarFiltros()">
+      <option value="todos">Todos os países</option>
+      <option value="United States">Estados Unidos</option>
+      <option value="United Kingdom">Reino Unido</option>
+      <option value="Canada">Canadá</option>
+      <option value="Korea, Republic of">Coreia</option>
+      <option value="Romania">Romania</option>
+      <option value="Irland">Irlanda</option>
+      <option value="Israel">Israel</option>
+      <option value="Spain">Espanha</option>
+      <option value="Chile">Chile</option>
+    </select>
+  </div>
+
+  <p class="contador"></p>
+
+  <div class="grid-series"></div>
+
+  <script src="dados.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
