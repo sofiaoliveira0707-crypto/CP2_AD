@@ -1,4 +1,3 @@
-// ---------- Elementos da página ----------
 const grid = document.querySelector(".grid-series");
 const campoBusca = document.querySelector(".busca");
 const selectAno = document.querySelector(".select-ano");
@@ -6,7 +5,6 @@ const selectPais = document.querySelector(".select-pais");
 const contador = document.querySelector(".contador");
 
 
-// ---------- Renderizando os atores ----------
 function renderizarAtores(lista) {
 
   grid.innerHTML = "";
@@ -70,5 +68,4 @@ function aplicarFiltros() {
 }
 
 
-// ---------- Início ----------
 renderizarAtores(atores);
